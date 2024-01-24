@@ -33,7 +33,7 @@ closeProfilePopupBtn.addEventListener('click', function() {
     profilePopup.classList.remove('show');
 });
 
-//input profile change 
+//input 
 document.addEventListener("DOMContentLoaded", function () {
     const inputFields = document.querySelectorAll('.input');
     
