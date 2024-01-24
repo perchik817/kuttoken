@@ -222,6 +222,8 @@ button{
 }
 .fio{
       display: flex;
+      max-width: 210px;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: flex-start;
       gap: 4px;
