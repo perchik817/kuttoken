@@ -6,12 +6,12 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./profile_style.css">
+      <link rel="stylesheet" href="./styles/profile_style.css">
       <title>My Profile</title>
 </head>
 <body>
-      <header>
-            <nav class="header">
+      <header id="header">
+            <nav class="header-nav">
                   <p class="logo"><a href="#home">Kut<span>To</span>ken</a></p>
                   <ul class="nav_list">
                         <li class="nav_list-item"><a href="#about">О нас</a></li>
@@ -28,8 +28,9 @@
 
       <main class="main">
             <section class="kuttoken section" id="kuttoken">
+                  <img src="./imgs/gold.png" alt="back" class="cover_img_kuttoken">
                   <div class="change">
-                        <button class="cover change-btn">
+                        <button class="cover change-btn" id="coverChangeBtn">
                               Изменить обложку
                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99992 2.66671C6.69843 2.66671 5.49869 2.77404 4.53572 2.90122C3.66907 3.01568 3.01556 3.66919 2.9011 4.53584C2.77392 5.49882 2.66659 6.69855 2.66659 8.00004C2.66659 9.30153 2.77392 10.5013 2.9011 11.4642C3.01556 12.3309 3.66907 12.9844 4.53572 13.0989C5.49869 13.226 6.69843 13.3334 7.99992 13.3334C9.30141 13.3334 10.5011 13.226 11.4641 13.0989C12.3308 12.9844 12.9843 12.3309 13.0987 11.4642C13.2259 10.5013 13.3333 9.30153 13.3333 8.00004C13.3333 6.69855 13.2259 5.49882 13.0987 4.53585C12.9843 3.66919 12.3308 3.01568 11.4641 2.90122C10.5011 2.77404 9.30141 2.66671 7.99992 2.66671ZM4.36115 1.57937C2.89661 1.77279 1.77267 2.89674 1.57925 4.36127C1.44627 5.3681 1.33325 6.62756 1.33325 8.00004C1.33325 9.37252 1.44627 10.632 1.57925 11.6388C1.77267 13.1033 2.89661 14.2273 4.36114 14.4207C5.36797 14.5537 6.62743 14.6667 7.99992 14.6667C9.3724 14.6667 10.6319 14.5537 11.6387 14.4207C13.1032 14.2273 14.2272 13.1033 14.4206 11.6388C14.5536 10.632 14.6666 9.37253 14.6666 8.00004C14.6666 6.62756 14.5536 5.3681 14.4206 4.36127C14.2272 2.89674 13.1032 1.77279 11.6387 1.57937C10.6319 1.4464 9.3724 1.33337 7.99992 1.33337C6.62743 1.33337 5.36797 1.4464 4.36115 1.57937Z" fill="#FCFCFD"/>
@@ -37,7 +38,7 @@
                                     <path d="M12.0808 8.47149L13.277 9.6677C13.2357 10.2918 13.1755 10.871 13.109 11.3853L11.138 9.4143C10.8776 9.15395 10.4555 9.15395 10.1952 9.4143L8.74746 10.862C7.96641 11.6431 6.70008 11.6431 5.91904 10.862L5.80465 10.7476C5.5443 10.4873 5.1222 10.4873 4.86185 10.7476L3.2558 12.3537C3.06975 12.1014 2.94527 11.7987 2.90109 11.4642C2.877 11.2817 2.85362 11.0908 2.83154 10.8923L3.91904 9.80482C4.70009 9.02377 5.96641 9.02377 6.74746 9.80482L6.86184 9.9192C7.12219 10.1796 7.5443 10.1796 7.80465 9.9192L9.25237 8.47149C10.0334 7.69044 11.2997 7.69044 12.0808 8.47149Z" fill="#FCFCFD"/>
                               </svg>
                         </button>
-                        <button class="profile change-btn">
+                        <button class="profile change-btn" id="profileChangeBtn">
                               Изменить профиль
                               <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M2 14.6667C2 14.2985 2.29848 14 2.66667 14H13.3333C13.7015 14 14 14.2985 14 14.6667C14 15.0349 13.7015 15.3333 13.3333 15.3333H2.66667C2.29848 15.3333 2 15.0349 2 14.6667Z" fill="#FCFCFD"/>
@@ -46,6 +47,51 @@
                         </button>
                   </div>
             </section>
+
+            <div class="change_cover popup" id="coverPopup">
+                  <div class="change_cover-inner">
+                        <div class="cover_inner_cont">
+                              <div class="cover_top">
+                                    <h1>Редактировать обложку</h1>
+                                    <button class="update-btn" id="closeCoverPopup">Обновить</button>
+                              </div>
+                              <img src="./imgs/gold.png" alt="Cover image" class="cover_img">
+                              <div class="img_btn">
+                                    <button class="load-btn">Загрузить новое</button>
+                                    <button class="delete-btn">Удалить фото</button>
+                              </div>
+                        </div>
+                  </div>
+            </div>
+
+            <div class="change_profile popup" id="profilePopup">
+                  <div class="change_profile-inner">
+                        <div class="inner_cont">
+                              <div class="profile_title">
+                                    Редактировать профиль
+                              </div>
+                              <div class="profile_avatar">
+                                    <img src="./imgs/avatar.jpg" alt="Avatar">
+                                    <div class="img_reduct">
+                                          <p class="reduct_title">Фото профиля</p>
+                                          <p class="advice">Мы рекомендуем изображение размером не менее 400x400 пикселей</p>
+                                          <div class="img_btn">
+                                                <button class="load-btn">Загрузить новое</button>
+                                                <button class="delete-btn">Удалить фото</button>
+                                          </div>
+                                    </div>
+                              </div>
+                              <div class="profile_info">
+                                    <div class="profile_info_title">Личная информация</div>
+                                    <input type="text" class="fio_input input" placeholder="Введите ФИО">
+                                    <input type="email" class="email_input input" placeholder="Введите email">
+                                    <input type="text" class="num_input input" placeholder="Введите номер телефона">
+                                    <input type="text" class="about_input input" placeholder="О себе">
+                              </div>
+                              <button class="update-btn profile-btn" id="closeProfilePopup">Обновить</button>
+                        </div>
+                  </div>
+            </div>
 
             <section class="docs section" id="docs">
                   <div class="docs_section_container">
@@ -226,5 +272,7 @@
                   </div>
             </div>
       </footer>
+
+      <script src="./js/profile_main.js"></script>
 </body>
 </html>
