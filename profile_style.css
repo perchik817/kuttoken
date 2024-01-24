@@ -48,11 +48,11 @@ li{
 
 .nav_list{
       display: flex;
-      align-items: flex-start;
+      align-items: center;
       gap: 28px; 
 }
 
-.nav_list a{
+.nav_list-item a{
       color: #FFF;
       font-size: 18px;
       font-weight: 400;
@@ -62,6 +62,10 @@ li{
 .nav_list-item a:hover{
       color: #E10000;
       transition: var(--color_transition);
+}
+
+.line{
+      height: 20px;
 }
 
 .kuttoken {
@@ -325,4 +329,41 @@ h1{
       font-size: 22px;
       font-weight: 600;
       line-height: 24px; /* 109.091% */
+}
+
+/* footer{
+      width: var(--width);
+      font-family: var(--sora);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 34px; 
+      background-color: #101011;
+      color: #FFF;
+} */
+.footer_container{
+      padding: 72px 140px;
+      width: var(--width);
+      font-family: var(--sora);
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 34px; 
+      background-color: #101011;
+      color: #FFF;
+
+}
+.footer, .privacy_policy{
+      width: calc(var(--width) - 280px);
+      display: flex;
+      justify-content: space-between;
+      transition: var(--back_color_tran);
+}
+.logo-footer{
+      right: 0;
+}
+.privacy_policy{
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 30px; /* 150% */ 
 }
