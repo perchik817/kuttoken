@@ -1,3 +1,32 @@
+// Функция для замены содержимого в зависимости от размера экрана
+function updateContent() {
+    const dynamicContent = document.getElementById('logo');
+    const screenWidth = window.innerWidth;
+
+    if (screenWidth > 1200) {
+        dynamicContent.src = './imgs/KutToken-logo.png';
+    } else if (screenWidth <= 1200 && screenWidth > 768) {
+        dynamicContent.src = './imgs/KutToken-logo.png';
+    } else if (screenWidth <= 768 && screenWidth > 400) {
+        dynamicContent.src = './imgs/KDI-logo.png';
+
+    } else {
+        dynamicContent.src = 'imgs/KDI-logo.png';
+    }
+}
+
+// Функция для обработки события изменения размера экрана
+function handleResize() {
+    updateContent(); // Вызываем функцию обновления содержимого при изменении размера окна
+}
+
+// Добавляем обработчик события изменения размера окна
+window.addEventListener('resize', handleResize);
+
+// Вызываем функцию updateContent() при загрузке страницы
+window.addEventListener('load', updateContent);
+
+
 // header nav
 function scrollHeader() {
       const header = document.getElementById('header');
