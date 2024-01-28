@@ -10,7 +10,7 @@ function updateContent() {
     } else if (screenWidth <= 768 && screenWidth > 400) {
         dynamicContent.src = './imgs/KDI-logo.png';
     } else {
-        dynamicContent.src = 'imgs/KDI-logo.png';
+        dynamicContent.src = './imgs/KDI-logo.png';
     }
 }
 

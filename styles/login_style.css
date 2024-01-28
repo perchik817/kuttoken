@@ -51,9 +51,9 @@
     
       .background {
             position: absolute;
-            margin: -69% 5% 0;
+            margin: -50% 20% 0;
             max-width: 100%;
-            max-height: 40%; 
+            max-height: 50%; 
       }
     
       .form_main {
@@ -64,7 +64,7 @@
     
       .form_cont {
             max-width: 100%;
-            top: 30%;
+            margin-top: 70%;
       }
     
       .form {
@@ -79,7 +79,7 @@
       }
     
       .input, .form_btn {
-            max-width: 62%;
+            max-width: 100%;
       }
     
       .logo {
@@ -98,7 +98,7 @@
     
       .form_btn {
             flex-direction: column;
-            max-width:  62%;
+            max-width:  100%;
       }    
   }
   
