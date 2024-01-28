@@ -10,21 +10,38 @@
       <title>My Profile</title>
 </head>
 <body>
-      <header id="header">
-            <nav class="header-nav">
-                  <p class="logo"><a href="#home">Kut<span>To</span>ken</a></p>
-                  <ul class="nav_list">
-                        <li class="nav_list-item"><a href="#about">О нас</a></li>
-                        <li class="nav_list-item"><a href="#token-assets">Токенизированные активы</a></li>
-                        <li class="nav_list-item"><a href="#blog">Блог</a></li>
-                        <li class="nav_list-item"><a href="#purchase">Как приобрести</a></li>
-                        <li class="nav_list-item"><a href="#contacts">Контакты</a></li>
-                        <li class="nav_list-item"><hr class="line"></li>
-                        <li class="nav_list-item"><a href="#technology">ТЕХНОЛОГИИ</a></li>
-                  </ul>
-                  <button class="log-out">Выйти из кабинета</button>
-            </nav>
-      </header>
+      <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo-wrapper">
+                        <a href="#" class="header__link"><img src="./imgs/KutToken-logo.png" alt="logo" class="header__logo"></a>
+                    </div>
+                    <nav class="navbar header__navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">О нас</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Токенизированные активы</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Блог</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Как приобрести</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Контакты</a>
+                            </li>
+                            <li class="navbar__item parallax-item">
+                                <a href="#" class="navbar__link">ТЕХНОЛОГИИ</a>
+                            </li>
+                        </ul>
+                        <a href="#"></a><button class="header__btn black__btn">Личный кабинет</button></a>
+                    </nav>
+                </div>
+            </div>
+        </header>
 
       <main class="main">
             <section class="kuttoken section" id="kuttoken">
@@ -200,78 +217,99 @@
                   </div>
             </section>
 
-            <section class="purchase section" id="purchase">
-                  <div class="purchase_section_container">
-                        <div class="inner_container">
-                              <h1>Как приобрести Токены</h1>
-                              <div class="purchase_info-container">
-                                    <div class="purchase_info-details">
-                                          <div class="left">
-                                                <img src="./imgs/birja.png" alt="Биржи" width="409.079" height="409.14">
-                                                <div class="text">
-                                                      <p class="text_title">Биржи</p>
-                                                      <p class="text_gen">незаменимый элемент в индустрии и строительстве. Прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.</p>
-                                                </div>
-                                          </div>
-                                    </div>
-
-                                    <div class="purchase_info-details">
-                                          <div class="right">
-                                                <div class="text">
-                                                      <p class="text_title">Ваш Токен</p>
-                                                      <p class="text_gen">незаменимый элемент в индустрии и строительстве. Прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.</p>
-                                                </div>
-                                                <img src="./imgs/token.png" alt="Ваш Токен" width="409.079" height="409.14">
-                                          </div>
-                                    </div>
-
-                                    <div class="purchase_info-details">
-                                          <div class="left">
-                                                <img src="./imgs/get.png" alt="Kut приобретает" width="409.079" height="409.14">
-                                                <div class="text">
-                                                      <p class="text_title">Kut приобретает</p>
-                                                      <p class="text_gen">незаменимый элемент в индустрии и строительстве. Прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.</p>
-                                                </div>
-                                          </div>
-                                    </div>
-
-                                    <div class="purchase_info-details">
-                                          <div class="right">
-                                                <div class="text">
-                                                      <p class="text_title">Где хранить</p>
-                                                      <p class="text_gen">незаменимый элемент в индустрии и строительстве. Прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.</p>
-                                                </div>
-                                                <img src="./imgs/save.png" alt="Где хранить" width="409.079" height="409.14">
-                                          </div>
-                                    </div>
+            <section class="advantages">
+                  <div class="container">
+                        <div class="advantages__inner">
+                        <h2 class="advantages__title">Как приобрести Токены</h2>
+                        <ul class="advantages__list">
+                        <li class="advantages__item">
+                              <div class="advantages__item-img-wrapper">
+                                    <img src="./imgs/birja.png" alt="icon" class="advantages__item-img">
                               </div>
-
-                              <button class="contact">Связаться с KDI</button>
+                              <div class="advantages__item-desc">
+                                    <h4 class="advantages__item-title">Биржи</h4>
+                                    <p class="advantages__item-text">
+                                    незаменимый элемент в индустрии и строительстве. Его прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.
+                                    </p>
+                              </div>
+                        </li>
+                        <li class="advantages__item">
+                              <div class="advantages__item-img-wrapper">
+                                    <img src="./imgs/token.png" alt="icon" class="advantages__item-img">
+                              </div>
+                              <div class="advantages__item-desc">
+                                    <h4 class="advantages__item-title">Ваш Токен</h4>
+                                    <p class="advantages__item-text">
+                                    незаменимый элемент в индустрии и строительстве. Его прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.
+                                    </p>
+                              </div>
+                        </li>
+                        <li class="advantages__item">
+                              <div class="advantages__item-img-wrapper">
+                                    <img src="./imgs/get.png" alt="icon" class="advantages__item-img">
+                              </div>
+                              <div class="advantages__item-desc">
+                                    <h4 class="advantages__item-title">Kut приобретает</h4>
+                                    <p class="advantages__item-text">
+                                    незаменимый элемент в индустрии и строительстве. Его прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.
+                                    </p>
+                              </div>
+                        </li>
+                        <li class="advantages__item">
+                              <div class="advantages__item-img-wrapper">
+                                    <img src="./imgs/save.png" alt="icon" class="advantages__item-img">
+                              </div>
+                              <div class="advantages__item-desc">
+                                    <h4 class="advantages__item-title">Где хранить</h4>
+                                    <p class="advantages__item-text">
+                                    незаменимый элемент в индустрии и строительстве. Его прочность и устойчивость к коррозии делают его ключевым компонентом в производстве сплавов и защитных покрытий.
+                                    </p>
+                              </div>
+                        </li>
+                        </ul>
+                        <a href="#"><button class="advantages__btn red__btn">Связаться с KDI</button></a>
                         </div>
                   </div>
             </section>
       </main>
 
-      <footer>
-            <div class="footer_container">
-                  <nav class="footer">
-                        <ul class="nav_list">
-                              <li class="nav_list-item"><a href="#about">О нас</a></li>
-                              <li class="nav_list-item"><a href="#token-assets">Токенизированные активы</a></li>
-                              <li class="nav_list-item"><a href="#blog">Блог</a></li>
-                              <li class="nav_list-item"><a href="#purchase">Как приобрести</a></li>
-                              <li class="nav_list-item"><a href="#contacts">Контакты</a></li>
-                              <li class="nav_list-item"><hr class="line"></li>
-                              <li class="nav_list-item"><a href="#technology">ТЕХНОЛОГИИ</a></li>
+      <footer class="footer">
+            <div class="container">
+                <div class="footer__header">
+                    <a href="№" class="footer__logo-link">
+                        <div class="footer__logo-wrapper">
+                            <img src="./imgs/KutToken-logo.png" alt="logo" class="footer__logo">
+                        </div>
+                    </a>
+                    <nav class="footer__navbar navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">О нас</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Токенизированные активы</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Блог</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Как приобрести</a>
+                            </li>
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Контакты</a>
+                            </li>
+                            <li class="navbar__item parallax-item">
+                                <a href="#" class="navbar__link">ТЕХНОЛОГИИ</a>
+                            </li>
                         </ul>
-                        <p class="logo logo-footer"><a href="#home">Kut<span>To</span>ken</a></p>
-                  </nav>
-                  <div class="privacy_policy">
-                        <p>Design by ITMAG 2024</p>
-                        <p class="policy">Политика конфиденциальности</p>
-                  </div>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <span class="footer__copyright">Design by ITMAG 2024</span>
+                    <span class="footer__police">Политика конфиденциальности</span> 
+                </div>
             </div>
-      </footer>
+        </footer>
 
       <script src="./js/profile_main.js"></script>
 </body>

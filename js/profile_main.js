@@ -14,26 +14,43 @@ function updateContent() {
     }
 }
 
-// Функция для обработки события изменения размера экрана
 function handleResize() {
-    updateContent(); // Вызываем функцию обновления содержимого при изменении размера окна
+    updateContent(); 
 }
 
-// Добавляем обработчик события изменения размера окна
 window.addEventListener('resize', handleResize);
 
-// Вызываем функцию updateContent() при загрузке страницы
 window.addEventListener('load', updateContent);
 
+document.addEventListener("DOMContentLoaded", function() {
+    var lastScrollTop = 0;
+    var header = document.querySelector('.header');
 
-// header nav
-function scrollHeader() {
-      const header = document.getElementById('header');
-      if (this.scrollY >= 80) header.classList.add('scroll-header');
-      else header.classList.remove('scroll-header');
-}
-  
-window.addEventListener('scroll', scrollHeader);
+    window.addEventListener("scroll", function(){
+        var currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll <= 0) {
+            // Верх страницы
+            header.style.position = 'absolute';
+            header.style.backgroundColor = 'transparent'; // Сделать шапку прозрачной
+            header.style.zIndex = "1";
+        } else if (currentScroll > lastScrollTop){
+            // Прокрутка вниз
+            header.style.position = 'absolute';
+            header.style.backgroundColor = 'transparent'; // Вернуть исходный цвет фона
+        } else {
+            // Прокрутка вверх
+            header.style.position = 'fixed';
+            header.style.top = '0';
+            header.style.width = '100%';
+            header.style.backgroundColor = '#0A0A0A';
+            header.style.zIndex = "1000";
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Обновить lastScrollTop к текущему положению скролла
+    });
+});
+
 
 //cover change popup
 const coverChangeBtn = document.getElementById('coverChangeBtn');
