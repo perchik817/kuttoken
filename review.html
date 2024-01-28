@@ -11,21 +11,29 @@
 </head>
 <body>
       
-      <header id="header">
-            <nav class="header-nav">
-                  <p class="logo"><a href="#home">Kut<span>To</span>ken</a></p>
-                  <ul class="nav_list">
-                        <li class="nav_list-item"><a href="#tokens">Токены</a></li>
-                        <li class="nav_list-item"><hr class="line"></li>
-                        <li class="nav_list-item active"><a href="#technology">ТЕХНОЛОГИИ</a></li>
-                  </ul>
-            </nav>
+      <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <div class="header__logo-wrapper">
+                        <a href="#" class="header__link"><img src="./imgs/KutToken-logo.png" alt="logo" class="header__logo"></a>
+                    </div>
+                    <nav class="navbar header__navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Токены</a>
+                            <li class="navbar__item parallax-item">
+                                <a href="#" class="navbar__link active">ТЕХНОЛОГИИ</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
       </header>
 
       <main class="main">
             <section class="main_container">
 
-                  <div class="back_container">
+                  <div class="back_container cont">
                         <a href="#" class="back_link">
                               <button class="back-btn">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -40,12 +48,12 @@
 
                   <div class="main_title">Обзор</div>
 
-                  <div class="target_container container">
+                  <div class="target_container cont">
                         <div class="target_title title">Цель: устойчивое социально-экономическое развитие</div>
                         <div class="target_def def">Цель Программы ЦТМ – устойчивое социально-экономическое и экологически безопасное развитие для всех стран и территорий, индивидуально и совместно.</div>
                   </div>
 
-                  <div class="spread_container container">
+                  <div class="spread_container cont">
                         <div class="spread_title title">Размах: 80 лет</div>
                         <div class="spred_def def">Программа ЦТМ строит Цифровой Мир по принципу “протопия” (итеративное построение желаемого и достижимого образ будущего, который предполагает постоянную эволюцию в процессе своего переосознания). Программа ЦТМ состоит из четырех (4) циклов, каждый продолжительностью двадцать (20) лет, с 2023 года по 2103 год без права прекращения, поглощения, слияния, или расторжения основных договоренностей о Программе ЦТМ. Каждый цикл состоит из нескольких взаимозависимых направлений работ с проектами в каждом направлении. Скользящее макро-планирование каждого цикла описывает выбранные направления работ и соответствующие проекты, а также координацию между проектами.</div>
                   </div>
@@ -60,7 +68,7 @@
                         </div>
                   </div>
 
-                  <div class="impl_mechanism_container container">
+                  <div class="impl_mechanism_container cont">
                         <div class="impl_mechanism_title title">Механизм реализации: Система Центров ЦТ</div>
                         <div class="impl_mechanism_def def">Механизм реализации Программы ЦТМ – это Система Центров ЦТ (СЦЦТ), которые распределены по всему Миру. Каждый Центр ЦТ проводит децентрализованную адаптацию общего Цифрового Инструментария ЦТ (ЦИЦТ)к местной специфике. Это позволяет каждой стране, территории, отрасли, фабрике проводить свою ЦТ со своей скоростью и своим путем. СЦЦТ суть координатор построения Цифрового Мира.
                               СЦЦТ руководится Глобальным Центром ЦТ (ГЦЦТ). ГЦЦТ предоставляет единые методологию, архитектуру, практику, НИОКР, инструменты, технологии, системы, платформы, решения и примеры. Все остальные Центры ЦТ создаются как частичные копии ГЦЦТ со своей местной спецификой.
@@ -69,20 +77,29 @@
             </section>
       </main>
 
-      <footer>
-            <div class="footer_container">
-                  <nav class="footer">
-                        <ul class="nav_list">
-                              <li class="nav_list-item"><a href="#tokens">Токены</a></li>
-                              <li class="nav_list-item"><hr class="line"></li>
-                              <li class="nav_list-item active"><a href="#technology">ТЕХНОЛОГИИ</a></li>
+      <footer class="footer">
+            <div class="container">
+                <div class="footer__header">
+                    <a href="№" class="footer__logo-link">
+                        <div class="footer__logo-wrapper">
+                            <img src="./imgs/KutToken-logo.png" alt="logo" class="footer__logo">
+                        </div>
+                    </a>
+                    <nav class="footer__navbar navbar">
+                        <ul class="navbar__list">
+                            <li class="navbar__item">
+                                <a href="#" class="navbar__link">Токены</a>
+                            </li>
+                            <li class="navbar__item parallax-item">
+                                <a href="#" class="navbar__link active">ТЕХНОЛОГИИ</a>
+                            </li>
                         </ul>
-                        <p class="logo logo-footer"><a href="#home">Kut<span>To</span>ken</a></p>
-                  </nav>
-                  <div class="privacy_policy">
-                        <p>Design by ITMAG 2024</p>
-                        <p class="policy">Политика конфиденциальности</p>
-                  </div>
+                    </nav>
+                </div>
+                <div class="footer__bottom">
+                    <span class="footer__copyright">Design by ITMAG 2024</span>
+                    <span class="footer__police">Политика конфиденциальности</span> 
+                </div>
             </div>
       </footer>
 
