@@ -308,7 +308,7 @@ button{
 section.purchase {
       color: #FFF;
       width: var(--width);
-      background-image: url(../imgs/purchase-min.png);
+      background-image: url(../imgs/purchase-back.jpg);
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;

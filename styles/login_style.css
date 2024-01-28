@@ -4,7 +4,7 @@
             width: 205px;
       }
       .form{
-            width: 548px;
+            max-width: 548px;
       }
       .form{
             border-radius: 12px;
@@ -36,7 +36,7 @@
       }
 }
   
-@media screen and (max-width: 700px) {
+/* @media screen and (max-width: 400px) {
       * {
             width: auto;
             height: auto;
@@ -99,7 +99,73 @@
       .input {
             max-width: 70%; 
       }
-}
+} */
+@media screen and (max-width: 700px) {
+      *{
+            max-width: 390px;
+      }
+
+      body {
+            justify-content: center;
+            align-items: flex-end;
+      }
+
+      button{
+            max-width: 87%;
+
+      }
+    
+      .background {
+            position: absolute;
+            margin: -68% 5%;
+            max-width: 100%;
+            max-height: 40%; 
+            z-index: -1;
+      }
+    
+      .form_main {
+            width: 100%;
+            align-items: center;
+            /* margin-top: auto; */
+            margin: auto auto 0;
+            padding-right: 0;
+      }
+    
+      .form_cont {
+            width: auto;
+            margin: 0 auto;
+            /* max-width: 70%; */
+      }
+    
+      .form {
+            margin: auto;
+            margin-bottom: 20px;
+            background-color: transparent;
+            border: none;
+            box-shadow: none;
+            padding: auto;
+      }
+    
+      .input, .form_btn {
+            max-width: 62%;
+      }
+    
+        .logo {
+            max-width: 10%;
+            position: absolute;
+            top: 2%;
+            left: 4%;
+        }
+      .form_title {
+            font-size: 32px;
+            text-align: left;
+      }
+    
+        .form_btn {
+            flex-direction: column;
+        }    
+  }
+  
   
     
 :root{
@@ -160,13 +226,13 @@ button{
 
 }
 
-.form_cont{
+/* .form_cont{
       width: 584px;
-}
+} */
 .form_cont{
       gap: 40px;
 }
-.form-inner, .form_input{
+.form_input{
       display: flex;
       flex-direction: column;
       gap: 16px;
