@@ -6,42 +6,27 @@
       <link rel="preconnect" href="https://fonts.googleapis.com">
       <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
       <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@400;600;700&family=Sora:wght@400;600;700&display=swap" rel="stylesheet">
-      <link rel="stylesheet" href="./styles/profile_style.css">
+      <!-- <link rel="stylesheet" href="./styles/profile_style.css"> -->
+      <link rel="stylesheet" href="./styles/profile_second.css">
       <title>My Profile</title>
 </head>
 <body>
+
       <header class="header">
-            <div class="container">
-                <div class="header__inner">
-                    <div class="header__logo-wrapper">
-                        <a href="#" class="header__link"><img src="./imgs/KutToken-logo.png" alt="logo" class="header__logo"></a>
-                    </div>
-                    <nav class="navbar header__navbar">
-                        <ul class="navbar__list">
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">О нас</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Токенизированные активы</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Блог</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Как приобрести</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Контакты</a>
-                            </li>
-                            <li class="navbar__item parallax-item">
-                                <a href="#" class="navbar__link">ТЕХНОЛОГИИ</a>
-                            </li>
-                        </ul>
-                        <a href="#"></a><button class="header__btn black__btn">Личный кабинет</button></a>
-                    </nav>
-                </div>
-            </div>
-        </header>
+            <nav class="header-nav">
+                  <p class="logo"><a href="#home">Kut<span>To</span>ken</a></p>
+                  <ul class="nav_list">
+                        <li class="nav_list-item"><a href="#about">О нас</a></li>
+                        <li class="nav_list-item"><a href="#token-assets">Токенизированные активы</a></li>
+                        <li class="nav_list-item"><a href="#blog">Блог</a></li>
+                        <li class="nav_list-item"><a href="#purchase">Как приобрести</a></li>
+                        <li class="nav_list-item"><a href="#contacts">Контакты</a></li>
+                        <li class="nav_list-item"><hr class="line"></li>
+                        <li class="nav_list-item"><a href="#technology">ТЕХНОЛОГИИ</a></li>
+                  </ul>
+                  <button class="log-out">Выйти из кабинета</button>
+            </nav>
+      </header>
 
       <main class="main">
             <section class="kuttoken section" id="kuttoken">
@@ -274,42 +259,25 @@
       </main>
 
       <footer class="footer">
-            <div class="container">
-                <div class="footer__header">
-                    <a href="№" class="footer__logo-link">
-                        <div class="footer__logo-wrapper">
-                            <img src="./imgs/KutToken-logo.png" alt="logo" class="footer__logo">
-                        </div>
-                    </a>
-                    <nav class="footer__navbar navbar">
-                        <ul class="navbar__list">
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">О нас</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Токенизированные активы</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Блог</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Как приобрести</a>
-                            </li>
-                            <li class="navbar__item">
-                                <a href="#" class="navbar__link">Контакты</a>
-                            </li>
-                            <li class="navbar__item parallax-item">
-                                <a href="#" class="navbar__link">ТЕХНОЛОГИИ</a>
-                            </li>
+            <div class="footer_container">
+                  <nav class="footer_nav">
+                        <ul class="nav_list">
+                              <li class="nav_list-item"><a href="#about">О нас</a></li>
+                              <li class="nav_list-item"><a href="#token-assets">Токенизированные активы</a></li>
+                              <li class="nav_list-item"><a href="#blog">Блог</a></li>
+                              <li class="nav_list-item"><a href="#purchase">Как приобрести</a></li>
+                              <li class="nav_list-item"><a href="#contacts">Контакты</a></li>
+                              <li class="nav_list-item"><hr class="line"></li>
+                              <li class="nav_list-item"><a href="#technology">ТЕХНОЛОГИИ</a></li>
                         </ul>
-                    </nav>
-                </div>
-                <div class="footer__bottom">
-                    <span class="footer__copyright">Design by ITMAG 2024</span>
-                    <span class="footer__police">Политика конфиденциальности</span> 
-                </div>
+                        <p class="logo logo-footer"><a href="#home">Kut<span>To</span>ken</a></p>
+                  </nav>
+                  <div class="privacy_policy">
+                        <p>Design by ITMAG 2024</p>
+                        <p class="policy">Политика конфиденциальности</p>
+                  </div>
             </div>
-        </footer>
+      </footer>
 
       <script src="./js/profile_main.js"></script>
 </body>
