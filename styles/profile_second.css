@@ -133,29 +133,25 @@
       .change_profile-inner{
             width: 30%;
             padding: 1% 1.4% 0;
-            height: 58%;
+            height: 605px;
       }
       .profile_title{
             font-size: 27px;
       }
-
-      .footer_container{
-            padding: 4% 7%;
-            gap: 34px;  
-      }
-      .privacy_policy{
-            font-size: 20px;
+      .img_reduct .img_btn{
+            width: 190%;
       }
       
       .update-btn{
             width: 30%;
       }
+
       .change_cover-inner{
             width: 60%;
-            height: 50%;
+            height: 500px;
       }
       .cover_inner_cont{
-            padding: 3.5%;
+            padding: 20px;
       }
       .cover_top h1{
             font-size: 35px;
@@ -170,6 +166,14 @@
       .cover_inner_cont .delete-btn{
             width: 18%;
             font-size: 13px;
+      }
+
+      .footer_container{
+            padding: 4% 7%;
+            gap: 34px;  
+      }
+      .privacy_policy{
+            font-size: 20px;
       }
 }
 
@@ -540,6 +544,8 @@ button{
           -ms-flex-direction: column;
               flex-direction: column;
       margin: 64px 0;
+      gap: 100px;
+
 }
 .advantages__item {
       width: 55%;
@@ -568,13 +574,10 @@ button{
          object-fit: cover;
 }
 .advantages__item-img-wrapper {
-      /* width: 400px;
-      height: 400px; */
       width: 50%;
       height: 50%;
 }
 .advantages__item-desc {
-      /* max-width: 380px; */
       max-width: 48%;
       display: -webkit-box;
       display: -ms-flexbox;
