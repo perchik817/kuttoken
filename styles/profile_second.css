@@ -6,7 +6,7 @@
             height: 334px;
       }
       .change {
-            top: 5.6%;
+            top: 5%;
             right: 50%;
             flex-direction: column;
       }
@@ -16,16 +16,15 @@
             font-size: 100%;
       }
 }
-@media (min-width:970px) and (max-width:1200px){
+@media (min-width:970px) and (max-width:1199px){
       .header_side{
             display: none;
       }
       .logo a{
             font-size: 110%;
       }
-      .nav_list-item a{
+      .nav_list-item a, .privacy_policy{
             font-size: 70%;
-
       }
       .line{
             height: 15px;
@@ -44,24 +43,105 @@
             padding: 6px 10px;
             font-size: 60%;
       }
+
+      .docs_section_container{
+            margin: 3% 12%;
+      }
+      /* .info_container{
+            height: 100%;
+            max-width: 30%;
+      } */
+      /* .info{
+            width: 100%;
+            height: 100%;
+      } */
+      .title{
+            font-size: 28px;
+      }
+      .cards{
+            grid-template-columns: repeat(2, 230px);
+      }
+      .doc_name{
+            font-size: 16px;
+      }
+      .doc_date{
+            font-size: 12px;
+      }
+
+      .advantages{
+            padding: 90px 0;
+      }
+      .advantages__title{
+            font-size: 53px;
+      }
+      .advantages__item-title {
+            font-size: 37px;
+            line-height: 50px;
+      }
+      .advantages__item-text {
+            font-size: 16px;
+            line-height: 180%;
+      }
+      .advantages__btn {
+            width: 372px;
+      }
+      .red__btn{
+            font-size: 18px;
+      }
+
+      .change_profile.popup{
+            margin: 3% 11%;
+      }
+      .change_profile-inner{
+            width: 80%;
+            padding: 1.3% 2%;
+      }
+      .profile_title{
+            font-size: 24px;
+      }
+      .img_reduct .img_btn{
+            width: 170%;
+      }
+      
+      .update-btn{
+            width: 30%;
+      }
+
+      .cover_top h1{
+            font-size: 24px;
+      }
+      .cover_inner_cont .update-btn{
+            font-size: 14px;
+      }
+      .cover_inner_cont .load-btn{
+            width: 25%;
+            font-size: 10px;
+      }
+      .cover_inner_cont .delete-btn{
+            width: 25%;
+            font-size: 10px;
+      }
+
+      /* .privacy_policy{
+            font-size: 70%;
+      } */
 }
 
-@media (min-width:1200px) and (max-width:1500px){
+@media (min-width:1200px) and (max-width:1499px){
       .header_side{
             display: none;
       }
       .logo a{
             font-size: 150%;
       }
-      .nav_list-item a{
-            font-size: 80%;
-
+      .nav_list-item a, .privacy_policy{
+            font-size: 90%;
       }
       .line{
             height: 16px;
       }
       .log-out{
-            font-size: 70%;
+            font-size: 78%;
       }
       .cover_img_kuttoken{
             height: 50%;
@@ -71,8 +151,83 @@
             right: 80px;
       }
       .change-btn{
-            padding: 8px 12px;
-            font-size: 70%;
+            padding: 10px 14px;
+            font-size: 78%;
+      }
+
+      .docs_section_container{
+            margin: 3% 12%;
+      }
+      .info_container{
+            height: 100%;
+            max-width: 30%;
+      }
+      .info{
+            width: 100%;
+            height: 100%;
+      }
+      .cards{
+            grid-template-columns: repeat(2, 291px);
+      }
+      .doc_name{
+            font-size: 18px;
+      }
+      .doc_date{
+            font-size: 14px;
+      }
+
+      .advantages{
+            padding: 90px 0;
+      }
+      .advantages__title{
+            font-size: 53px;
+      }
+      .advantages__item-title {
+            font-size: 37px;
+            line-height: 50px;
+      }
+      .advantages__item-text {
+            font-size: 16px;
+            line-height: 180%;
+      }
+      .advantages__btn {
+            width: 372px;
+      }
+      .red__btn{
+            font-size: 18px;
+      }
+
+      .change_profile.popup{
+            margin: 0 32%;
+      }
+      .change_profile-inner{
+            width: 40%;
+            padding: 1.5% 2%;
+      }
+      .profile_title{
+            font-size: 27px;
+      }
+      .img_reduct .img_btn{
+            width: 190%;
+      }
+      
+      .update-btn{
+            width: 30%;
+      }
+
+      .cover_top h1{
+            font-size: 29px;
+      }
+      .cover_inner_cont .update-btn{
+            font-size: 17px;
+      }
+      .cover_inner_cont .load-btn{
+            width: 25%;
+            font-size: 13px;
+      }
+      .cover_inner_cont .delete-btn{
+            width: 25%;
+            font-size: 13px;
       }
 }
 
@@ -83,9 +238,8 @@
       .logo a{
             font-size: 210%;
       }
-      .nav_list-item a{
+      .nav_list-item a, .privacy_policy{
             font-size: 110%;
-
       }
       .line{
             height: 18px;
@@ -113,11 +267,25 @@
             max-width: 20%;
       }
       .info{
-            padding: 9%;
             width: 100%;
             height: 100%;
       }
+      .cards{
+            grid-template-columns: repeat(3, 291px);
+      }
+      .doc_name{
+            font-size: 18px;
+      }
+      .doc_date{
+            font-size: 14px;
+      }
 
+      .advantages{
+            padding: 120px 0;
+      }
+      .advantages__title{
+            font-size: 60px;
+      }
       .advantages__item-title {
             font-size: 44px;
             line-height: 72px;
@@ -129,11 +297,16 @@
       .advantages__btn {
             width: 412px;
       }
+      .red__btn{
+            font-size: 22px;
+      }
 
+      .change_profile.popup{
+            margin: 3% 35%;
+      } 
       .change_profile-inner{
             width: 30%;
-            padding: 1% 1.4% 0;
-            height: 605px;
+            padding: 1% 1.4%;
       }
       .profile_title{
             font-size: 27px;
@@ -146,15 +319,8 @@
             width: 30%;
       }
 
-      .change_cover-inner{
-            width: 60%;
-            height: 500px;
-      }
-      .cover_inner_cont{
-            padding: 20px;
-      }
       .cover_top h1{
-            font-size: 35px;
+            font-size: 33px;
       }
       .cover_inner_cont .update-btn{
             font-size: 17px;
@@ -166,14 +332,6 @@
       .cover_inner_cont .delete-btn{
             width: 18%;
             font-size: 13px;
-      }
-
-      .footer_container{
-            padding: 4% 7%;
-            gap: 34px;  
-      }
-      .privacy_policy{
-            font-size: 20px;
       }
 }
 
@@ -219,17 +377,12 @@ button{
       padding: 0 2%;
 }
 
-.change_profile.popup{
-      margin: 3% 35%;
-}
 .popup {
       display: none;
       position: fixed;
       top: 0;
-      left: 0;
+      margin: 3% 20%;
       width: 100%;
-      height: 100%;
-      margin: 5% 20%;
       opacity: 0; 
       transition: opacity 0.5s ease; 
       z-index: 1000;
@@ -328,40 +481,7 @@ button{
 }
 
 /* MOBILE */
-.header_side{
-      position: absolute;
-}
-.header_side_nav{
-      display: flex;
-      justify-content: space-between;
-}    
-.burger-icon {
-      cursor: pointer;
-      
-}
-.sidebar {
-      height: 100%;
-      width: 0;
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #111;
-      overflow-x: hidden;
-      transition: 0.5s;
-      padding-top: 60px;
-      color: white;
-}
-.sidebar a {
-      padding: 8px 8px 8px 32px;
-      text-decoration: none;
-      font-size: 25px;
-      color: #818181;
-      display: block;
-      transition: 0.3s;
-}
-.sidebar a:hover {
-      color: #f1f1f1;
-}
+
     
     
 
@@ -408,6 +528,8 @@ button{
       border: 1px solid #E6E8EC;
       background: #FCFCFD;
       box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
+      height: 100%;
+      max-width: 30%;
 }
 .info{
       display: flex;
@@ -417,6 +539,8 @@ button{
       align-items: left;
       gap: 24px; 
       flex-direction: column;
+      width: 100%;
+      height: 100%;
 }
 .img_wrapper{
       text-align: center;
@@ -465,7 +589,7 @@ button{
 }
 .title{
       color: #1A1A1D;
-      font-size: 30px;
+      /* font-size: 30px; */
       font-weight: 700;
       line-height: 150%; /* 45px */
 }
@@ -476,8 +600,6 @@ button{
       padding-top: 12px;
       display: grid;
       gap: 12px;
-      grid-template-columns: repeat(3, 291px);
-      justify-content: center;
 }
 .card{
       display: flex;
@@ -490,17 +612,16 @@ button{
       box-shadow: 0px 40px 32px -24px rgba(15, 15, 15, 0.12);
 }
 .card img {
-      height: 210px;
       align-self: stretch;
 }
 .doc_info{
-      padding-left: 25px;
+      padding-left: 8%;
 }
 .doc_name{
       color: var(--Black, #282828);
       font-feature-settings: 'clig' off, 'liga' off;
       font-family: var(--inter);
-      font-size: 18px;
+      /* font-size: 18px; */
       font-weight: 600;
       line-height: 30px; /* 166.667% */
 }
@@ -508,7 +629,7 @@ button{
       color: var(--Blue-Black-500, #5F6980);
       font-feature-settings: 'clig' off, 'liga' off;
       font-family: var(--inter);
-      font-size: 14px;
+      /* font-size: 14px; */
       font-weight: 400;
       line-height: 22px; /* 157.143% */
 }
@@ -519,7 +640,6 @@ button{
       background-image: linear-gradient(0deg, rgba(26, 26, 29, 0.75) 0%, rgba(26, 26, 29, 0.75) 100%), url(../imgs/purchase-back.jpg);
       background-position: center;
       color: #FFF;
-      padding: 120px 0;
       background-repeat: no-repeat;
       background-size: cover;
       width: var(--width);
@@ -528,7 +648,6 @@ button{
       text-align: center;
 }
 .advantages__title {
-      font-size: 60px;
       line-height: 150%;
       font-weight: 700;
       text-align: center;
@@ -544,8 +663,7 @@ button{
           -ms-flex-direction: column;
               flex-direction: column;
       margin: 64px 0;
-      gap: 100px;
-
+      gap: 70px;
 }
 .advantages__item {
       width: 55%;
@@ -599,7 +717,6 @@ button{
       padding: 1.4%;
       border-radius: 5px;
       background: #E10000;
-      font-size: 22px;
       font-weight: 600;
       line-height: 24px;
       color: #FFF;
@@ -610,8 +727,9 @@ button{
       width: 100%;
 }
 .footer_container{
-      /* padding: 72px 140px; */
       width: 100%;
+      padding: 4% 7%;
+      gap: 34px;  
       font-family: var(--sora);
       display: flex;
       flex-direction: column;
@@ -642,9 +760,11 @@ button{
       border: 2px solid rgba(255, 255, 255, 0.10);
       background: var(--Blocks, #2B2C2E);
       box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.25);
+      width: 60%;
 }
 .cover_inner_cont{
       width: 100%;
+      padding: 20px;
 }
 .cover_top{
       width: inherit;
@@ -661,8 +781,7 @@ button{
       letter-spacing: -2px;
 }
 .cover_img{
-      padding-top: 32px;
-      height: 340px;
+      padding-top: 20px;
       border-radius: 4px;
       width: inherit;
 }
@@ -766,8 +885,8 @@ button{
 }
 .profile-btn{
       width: 100%;
-      padding: 14px;
-
+      padding: 2.8%;
+      /* font-size: 16px; */
 }
 .input.has-text,
 .input:focus{

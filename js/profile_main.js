@@ -58,6 +58,19 @@ closeProfilePopupBtn.addEventListener('click', function() {
     profilePopup.classList.remove('show');
 });
 
+// profile change2 popup
+const profileChangeBtn2 = document.getElementById('profileChangeBtn2');
+const profilePopup2 = document.getElementById('profilePopup2');
+// const closeProfilePopupBtn2 = document.getElementById('closeProfilePopup2');
+
+profileChangeBtn.addEventListener('click', function() {
+    profilePopup.classList.add('show');
+});
+
+closeProfilePopupBtn.addEventListener('click', function() {
+    profilePopup.classList.remove('show');
+});
+
 //input 
 document.addEventListener("DOMContentLoaded", function () {
     const inputFields = document.querySelectorAll('.input');
