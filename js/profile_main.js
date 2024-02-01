@@ -1,18 +1,22 @@
-// Функция для замены содержимого в зависимости от размера экрана
-function updateContent() {
-    const dynamicContent = document.getElementById('logo');
-    const screenWidth = window.innerWidth;
+const crossButton = document.querySelector(".header__menu-icon");
+const crossUpLine = document.querySelector(".first-line");
+const crossDownLine = document.querySelector(".second-line");
+const navbarLayer = document.querySelector(".header__navbar");
+const logo = document.querySelector(".header__logo2");
 
-    if (screenWidth > 1200) {
-        dynamicContent.src = './imgs/KutToken-logo.png';
-    } else if (screenWidth <= 1200 && screenWidth > 768) {
-        dynamicContent.src = './imgs/KutToken-logo.png';
-    } else if (screenWidth <= 768 && screenWidth > 400) {
-        dynamicContent.src = './imgs/KDI-logo.png';
-    } else {
-        dynamicContent.src = './imgs/KDI-logo.png';
-    }
-}
+crossButton.addEventListener("click", function() {
+    crossButton.classList.toggle("active");
+    navbarLayer.classList.toggle("active");
+    logo.classList.toggle("active");
+})
+
+const navbarLinks = document.querySelectorAll(".header__navbar a");
+navbarLinks.forEach((link) => {
+    link.addEventListener("click", function(){
+        crossButton.classList.remove("active");
+        navbarLayer.classList.remove("active");
+    });
+})
 
 function handleResize() {
     updateContent(); 
