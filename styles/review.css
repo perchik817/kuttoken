@@ -257,10 +257,10 @@ button {
   line-height: 30px; /* 150% */
 }
 
-@media (max-width: 969px) {
+@media (max-width: 970px) {
   .header-nav {
     padding: 5%;
-    height: 10%;
+    height: 80px;
   }
   .header-nav.active {
     background-color: #1e1e1f;
@@ -431,9 +431,21 @@ button {
   .def {
     font-size: 16px;
   }
+
+.quote_inner {
+  padding: 40px 10px;
+  gap: 20px;
+}
+.quote {
+  font-size: 16px;
+  line-height: 24px; 
+}
+.quote_end {
+  font-size: 14px;
+}
 }
 
-@media (min-width: 970px) and (max-width: 1199px) {
+@media (min-width: 970px) and (max-width: 1200px) {
   .logo a {
     font-size: 130%;
   }
@@ -461,9 +473,21 @@ button {
   .def {
     font-size: 16px;
   }
+
+  .quote_inner {
+    padding: 40px 10px;
+    gap: 20px;
+  }
+  .quote {
+    font-size: 18px;
+    line-height: 28px; 
+  }
+  .quote_end {
+    font-size: 16px;
+  }
 }
 
-@media (min-width: 1200px) and (max-width: 1499px) {
+@media (min-width: 1200px) and (max-width: 1500px) {
   .logo a {
     font-size: 170%;
   }

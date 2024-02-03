@@ -603,10 +603,10 @@ button {
   color: #fff;
 }
 
-@media (max-width: 969px) {
+@media (max-width: 970px) {
   .header-nav {
     padding: 5%;
-    height: 10%;
+    height: 80px;
   }
   .header-nav.active {
     background-color: #1e1e1f;
@@ -942,7 +942,7 @@ button {
   }
 }
 
-@media (min-width: 970px) and (max-width: 1199px) {
+@media (min-width: 970px) and (max-width: 1200px) {
   .logo a {
     font-size: 110%;
   }
@@ -1108,8 +1108,7 @@ button {
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1499px) {
-
+@media (min-width: 1200px) and (max-width: 1500px) {
   .logo a {
     font-size: 150%;
   }
