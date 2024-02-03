@@ -131,7 +131,10 @@
           <div class="inner_cont inner_cont_second">
             <div class="profile_info">
               <div class="profile_info_title">Личная информация</div>
-              <input type="text" class="fio_input input" placeholder="Введите ФИО"
+              <input
+                type="text"
+                class="fio_input input"
+                placeholder="Введите ФИО"
               />
               <input
                 type="email"
@@ -228,60 +231,143 @@
               </div>
             </div>
           </div>
-          <div class="docs_container">
-            <div class="docs_cards">
-              <p class="title">Договоры</p>
-              <div class="cards">
-                <div class="card">
-                  <img src="./imgs/Card images.png" alt="Agreement" />
-                  <div class="doc_info">
-                    <p class="doc_name">Договор Токенизации</p>
-                    <p class="doc_date">12/02/2024</p>
+          <div class="tabs__content">
+            <div class="tabs__btns">
+              <span class="tabs__btn tab__active" data-target="#myDocs"
+                >Мои документы</span
+              >
+              <span class="tabs__btn" data-target="#kdiDocs"
+                >Документы KDI</span
+              >
+            </div>
+            <div class="tabs__item tab__active" data-content id="myDocs">
+              <div class="tabs__data">
+                <p class="title">Договоры</p>
+                <div class="cards">
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Договор Токенизации</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Договор Токенизации</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Договор Токенизации</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="card">
-                  <img src="./imgs/Card images.png" alt="Agreement" />
-                  <div class="doc_info">
-                    <p class="doc_name">Договор Токенизации</p>
-                    <p class="doc_date">12/02/2024</p>
+              <div class="tabs__data">
+                <p class="title">Печати</p>
+                <div class="cards">
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Договор Токенизации</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
                   </div>
-                </div>
 
-                <div class="card">
-                  <img src="./imgs/Card images.png" alt="Agreement" />
-                  <div class="doc_info">
-                    <p class="doc_name">Договор Токенизации</p>
-                    <p class="doc_date">12/02/2024</p>
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Договор Токенизации</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Договор Токенизации</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="docs_cards">
-              <p class="title">Печати</p>
-              <div class="cards">
-                <div class="card">
-                  <img src="./imgs/Card images.png" alt="Agreement" />
-                  <div class="doc_info">
-                    <p class="doc_name">Договор Токенизации</p>
-                    <p class="doc_date">12/02/2024</p>
+            <div class="tabs__item" data-content id="kdiDocs">
+              <div class="tabs__data">
+                <p class="title">Политика KDI</p>
+                <div class="cards">
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Политика KDI</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="card">
-                  <img src="./imgs/Card images.png" alt="Agreement" />
-                  <div class="doc_info">
-                    <p class="doc_name">Договор Токенизации</p>
-                    <p class="doc_date">12/02/2024</p>
+              <div class="tabs__data">
+                <p class="title">Оплата и оформление</p>
+                <div class="cards">
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Оплата и оформление 1</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Оплата и оформление 2</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Оплата и оформление 3</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
                   </div>
                 </div>
+              </div>
 
-                <div class="card">
-                  <img src="./imgs/Card images.png" alt="Agreement" />
-                  <div class="doc_info">
-                    <p class="doc_name">Договор Токенизации</p>
-                    <p class="doc_date">12/02/2024</p>
+              <div class="tabs__data">
+                <p class="title">Печати</p>
+                <div class="cards">
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Печать 1</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Печать 2</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
+                  </div>
+
+                  <div class="card">
+                    <img src="./imgs/Card images.png" alt="Agreement" />
+                    <div class="doc_info">
+                      <p class="doc_name">Печать 3</p>
+                      <p class="doc_date">12/02/2024</p>
+                    </div>
                   </div>
                 </div>
               </div>

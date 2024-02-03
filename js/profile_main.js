@@ -1,3 +1,28 @@
+// tabs
+const tabs = document.querySelectorAll('[data-target]');
+const tabContents = document.querySelectorAll('[data-content]');
+
+tabs.forEach((tab) => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.target);
+
+        tabContents.forEach((tabContent) => {
+            tabContent.classList.remove('tab__active');
+        });
+
+        if (target) {
+            target.classList.add('tab__active');      
+        }
+
+        tabs.forEach((tab) => {
+            tab.classList.remove('tab__active');
+        });
+
+        tab.classList.add('tab__active');
+    });
+});
+
+
 const crossButton = document.querySelector(".header__menu-icon");
 const crossUpLine = document.querySelector(".first-line");
 const crossDownLine = document.querySelector(".second-line");
