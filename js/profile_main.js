@@ -22,7 +22,7 @@ tabs.forEach((tab) => {
     });
 });
 
-
+// header
 const crossButton = document.querySelector(".header__menu-icon");
 const crossUpLine = document.querySelector(".first-line");
 const crossDownLine = document.querySelector(".second-line");
@@ -53,6 +53,7 @@ function toggleSidebar() {
   }
 }
 
+// cover popup
 const coverChangeBtn = document.getElementById("coverChangeBtn");
 const coverPopup = document.getElementById("coverPopup");
 const closeCoverPopupBtn = document.getElementById("closeCoverPopup");
@@ -64,6 +65,7 @@ closeCoverPopupBtn.addEventListener("click", function () {
 coverPopup.classList.remove("show");
 });
   
+// profile popup
 const profileChangeBtn = document.getElementById("profileChangeBtn");
 const profilePopup = document.getElementById("profilePopup");
 const closeProfilePopupBtn = document.getElementById("closeProfilePopup");
