@@ -97,9 +97,6 @@ button {
 }
 
 /* HEADER */
-.header {
-  /* background-color: #0a0a0a; */
-}
 .header-nav {
   display: flex;
   position: absolute;

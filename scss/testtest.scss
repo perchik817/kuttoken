@@ -1,0 +1,155 @@
+$blue: #0684c2;
+$black: #000;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  position: relative;
+  color: black;
+}
+
+.background_img_cont img {
+  width: 100%;
+  height: 100vh;
+  z-index: -1;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  object-fit: cover;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.container {
+  padding: 92px 82px;
+}
+
+.inner_cont {
+  display: flex;
+  flex-direction: column;
+  gap: 250px;
+
+  &_top {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  
+    &_title {
+      color: rgba(36, 36, 40, 0.41);
+      font-size: 55px;
+      line-height: 110%;
+      font-weight: 600;
+    }
+  
+    &_year {
+      color: rgba(255, 0, 0, 0.41);
+      font-size: 96px;
+      line-height: 110%;
+      font-weight: 700;
+    }
+}
+}
+
+.timeline-wrapper {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 3px;
+    transition: 0.75s ease-out;
+    background: lighten($black, 30);
+    width: 0px;
+    z-index: 0 !important;
+    left: 0;
+    bottom: 0px;
+  }
+}
+
+.timeline {
+  display: flex;
+  transition: all 0.3s;
+  justify-content: center;
+  padding-bottom: 30px;
+  border-bottom: 3px solid $black;
+
+  .event {
+    cursor: pointer;
+    padding: 1em;
+    position: relative;
+    margin: 0 1em 0 1em;
+    transition: all 0.3s;
+    color: darken($black, 20);
+    text-align: center;
+
+    .close {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      text-align: center;
+      border-radius: 3px;
+      width: 20px;
+      height: 20px;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        color: darkred;
+        background: #fff;
+      }
+    }
+
+    h2 {
+      position: relative;
+      z-index: 1;
+
+      &::before {
+        display: block;
+        position: absolute;
+        top: 50px;
+        left: calc(50% - 15px);
+        font-size: 30px;
+        opacity: 0.1;
+        z-index: 0;
+      }
+    }
+
+    &:hover {
+      transform-origin: 100px 0px;
+      z-index: 2;
+    }
+
+    &:hover::after {
+      transform: scale(1.1);
+      border-color: darken($blue, 10);
+      z-index: 2;
+    }
+
+    &::after {
+      margin: 0 auto;
+      position: relative;
+      bottom: -65px;
+      content: "";
+      display: block;
+      border-radius: 15px;
+      height: 30px;
+      width: 30px;
+      box-sizing: border-box;
+      box-shadow: 0 0 5px darken($blue, 10);
+      background: #fff;
+      border: 5px solid $blue;
+      transition: all 0.25s;
+      z-index: 2;
+    }
+
+    &.active {
+      transform: scale(1.1) translateY(-5px);
+      z-index: 2;
+    }
+  }
+}

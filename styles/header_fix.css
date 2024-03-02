@@ -1,0 +1,130 @@
+body {
+  font-family: "Sora", sans-serif;
+  position: relative;
+}
+
+.container {
+  max-width: 1640px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.white-button {
+  background-color: transparent;
+  border-radius: 5px;
+  border: 2px solid #E8E8E8;
+  padding: 16px 32px;
+  text-align: center;
+  font-weight: 600;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.red-button {
+  background: #E10000;
+  border-radius: 5px;
+  padding: 20px;
+  font-weight: 600;
+  color: #FFF;
+}
+
+.logo {
+  position: relative;
+  z-index: 1000;
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+  letter-spacing: -1.5px;
+}
+.logo a {
+  color: #FFF;
+}
+.logo a span {
+  color: #E10000;
+}
+
+.header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 500;
+  padding: 32px 0;
+}
+.header__inner {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.header__logo {
+  margin-right: 100px;
+}
+.header__menu {
+  width: 100%;
+}
+.header__navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.header__button {
+  font-size: 16px;
+}
+
+.navbar__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.navbar__item {
+  position: relative;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+.navbar__item.hidden {
+  display: none;
+  opacity: 0;
+  pointer-events: none;
+}
+.navbar__item + .navbar__item {
+  margin-left: 28px;
+}
+.navbar__item:last-child {
+  padding-left: 28px;
+}
+.navbar__item:last-child::before {
+  position: absolute;
+  content: "|";
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #FFF;
+}
+.navbar__link {
+  color: #FFF;
+  font-size: 18px;
+  line-height: 150%;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+.navbar__link:hover, .navbar__link.active {
+  color: #E10000;
+}

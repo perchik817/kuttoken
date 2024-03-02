@@ -1,0 +1,127 @@
+body {
+      font-family: "Sora", sans-serif;
+      position: relative;
+}
+
+.container {
+      max-width: 1640px;
+      padding: 0 20px;
+      margin: 0 auto;
+}
+
+.white-button {
+      background-color: transparent;
+      border-radius: 5px;
+      border: 2px solid #E8E8E8;
+      padding: 16px 32px;
+      text-align: center;
+      font-weight: 600;
+      color: #FFF;
+      cursor: pointer;
+}
+
+.red-button {
+      background: #E10000;
+      border-radius: 5px;
+      padding: 20px;
+      font-weight: 600;
+      color: #FFF;
+}
+
+.logo {
+      position: relative;
+      z-index: 1000;
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 700;
+      letter-spacing: -1.5px;
+
+      a {
+            color: #FFF;
+
+            span {
+                  color: #E10000;
+            }
+      }
+}
+
+.header {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      z-index: 500;
+      padding: 32px 0;
+
+      &__inner {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+      }
+
+      &__logo {
+            margin-right: 100px;
+      }
+
+      &__menu {
+            width: 100%;
+      }
+
+      &__navbar {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+      }
+
+      &__button {
+            font-size: 16px;
+      }
+}
+
+.navbar {
+      &__list {
+            display: flex;
+            align-items: center;
+      }
+
+      &__item {
+            position: relative;
+            transition: opacity 0.5s ease-in-out;
+
+            &.hidden {
+                  display: none;
+                  opacity: 0;
+                  pointer-events: none;
+            }
+
+            &+& {
+                  margin-left: 28px;
+            }
+
+            &:last-child {
+                  padding-left: 28px;
+
+                  &::before {
+                        position: absolute;
+                        content: "|";
+                        left: 0;
+                        top: 50%;
+                        transform: translateY(-50%);
+                        color: #FFF;
+                  }
+            }
+      }
+
+      &__link {
+            color: #FFF;
+            font-size: 18px;
+            line-height: 150%;
+            transition: 0.5s ease;
+
+            &:hover,
+            &.active {
+                  color: #E10000;
+            }
+      }
+}
