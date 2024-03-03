@@ -30,7 +30,7 @@ button {
 
 .road_map.section {
   min-height: 90vh;
-  background-image: url(../imgs/треугольники-light.png);
+  background-image: url(../assets/images/треугольники-light.png);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -584,7 +584,7 @@ button {
     display: none;
   }
   main {
-    background-image: url(../imgs/треугольники.png);
+    background-image: url(../assets/images/треугольники.png);
     object-fit: contain;
     width: 100%;
     background-position: center;
